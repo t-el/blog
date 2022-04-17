@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('head') -%>
+<body>
+    <div class="flex overflow-y-auto p-2  m-1">
+                       
+        <div class="inline-flex rounded-md shadow-sm" role="group">
+
+            <button onclick="add('title')" type="button" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-l-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 ">
+            Title
+            </button>
+            <button onclick="add('sub_title')" type="button" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 ">
+            SubTitle
+            </button>
+            <button onclick="add('code')" type="button" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white  border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 ">
+            Code
+            </button>
+            <button onclick="add('terminal')" type="button" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white  border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 ">
+            Terminal
+            </button>
+            <button onclick="add('quoate')" type="button" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white  border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 ">
+            Quoate
+            </button>
+            <button onclick="add('list')" type="button" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white  border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 ">
+            List
+            </button>
+            <button onclick="add('progress')" type="button" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white  border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 ">
+                Progress
+            </button>
+            <button onclick="add('toast')" type="button" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white  border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 ">
+            Toast
+            </button>
+            <button onclick="add('break')" type="button" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white  border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 ">
+            Break
+            </button>
+            <button onclick="add('line')" type="button" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white  border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 ">
+            Line
+            </button>
+            <button onclick="add('alert')" type="button" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white  border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 ">
+            Alert
+            </button>
+            <button onclick="add('badge')" type="button" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white  border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 ">
+            Badge
+            </button>
+            <button onclick="add('image')" type="button" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white  border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 ">
+            Image
+            </button>
+            <button onclick="add('flex_div')" type="button" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-r-md border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 ">
+            flex
+            </button>
+        </div>
+
+    </div>
+    <div class="flex  border shadow m-2 p-2 ">
+        
+        <div class="flex-auto w-64 ">
+         
+
+            <form action="/add" method="post">
+                
+               
+                    <textarea name="content"  oninput ="prev()" id="blog_content" rows="4" class="block p-2.5 w-full h-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" ></textarea>
+                    <div class="mb-6">
+                        <label for="base-input" class="block mb-2 text-sm font-medium text-gray-900 ">Title</label>
+                        <input name="title" type="text" id="blog_title" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                    </div>
+                   <input  class="m-2 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none"  type="submit" value="Submit">
+                        </form>
+        
+        </div>
+
+
+        <div id="preview" class="flex-auto w-64 m-2  p-2 border rounded-lg">
+          
+        </div>
+
+    </div>
+
+    <script>
+        function prev(){
+            let html_prev = document.getElementById('preview');
+            let blog_content = document.getElementById('blog_content').value;
+            html_prev.innerHTML = blog_content;
+
+        }
+
+        function add(element){
+            let blog_content = document.getElementById('blog_content');
+            var startPosition = blog_content.selectionStart;
+            var endPosition = blog_content.selectionEnd;
+
+            if(startPosition == endPosition){
+
+                if(element === "title"){
+                    blog_content.value = blog_content.value.slice(0, startPosition) +  "<h1 class='font-bold text-3xl'>Title Here</h1>" + blog_content.value.slice(startPosition);
+                }else if(element === "sub_title"){
+                    blog_content.value = blog_content.value.slice(0, startPosition) +  "<h1 class='font-bold  text-gray-500'>Sub Title Here</h1>" + blog_content.value.slice(startPosition);
+
+                }else if(element === "code"){
+                    blog_content.value = blog_content.value.slice(0, startPosition) +  "<div class='p-2 m-1 bg-gray-200 overflow-auto rounded-lg shadow border'> <pre># Code here</pre> </div>" + blog_content.value.slice(startPosition);
+
+                }else if(element === "quoate"){
+                    blog_content.value = blog_content.value.slice(0, startPosition) +  "<div class='p-2 m-1 border-l-4 font-mono border-gray-900 text-gray-400  '> <pre class='font-italic'># Code here</pre> </div>" + blog_content.value.slice(startPosition);
+
+                }else if(element === "flex_div"){
+                    blog_content.value = blog_content.value.slice(0, startPosition) +  "<div class='flex overflow-x-auto justify-center p-2 m-1 '></div>" + blog_content.value.slice(startPosition);
+
+                }else if(element === "terminal"){
+                    blog_content.value = blog_content.value.slice(0, startPosition) +  "<div class='p-2 m-1 text-white bg-black rounded-lg shadow '>>>> </div>" + blog_content.value.slice(startPosition);
+
+                }else if(element === "image"){
+                    blog_content.value = blog_content.value.slice(0, startPosition) +  "<img src='https://random.imagecdn.app/500/150' class='p-2 m-1  rounded-lg shadow ' />" + blog_content.value.slice(startPosition);
+
+                }
+                else if(element === "break"){
+                    blog_content.value = blog_content.value.slice(0, startPosition) +  "<br/>" + blog_content.value.slice(startPosition);
+
+                }else if(element === "line"){
+                    blog_content.value = blog_content.value.slice(0, startPosition) +  "<hr/>" + blog_content.value.slice(startPosition);
+
+                }
+                else if(element === "alert"){
+                    let alert = `<div id="alert-border-1" class="flex p-4 mb-4 bg-blue-100 border-t-4 border-blue-500" role="alert">
+<svg class="flex-shrink-0 w-5 h-5 text-blue-700" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+<div class="ml-3 text-sm font-medium text-blue-700">
+A simple info alert with an <a href="#" class="font-semibold underline hover:text-blue-800">example link</a>. Give it a click if you like.
+</div>
+</div>
+ `;
+                    blog_content.value = blog_content.value.slice(0, startPosition) +  alert + blog_content.value.slice(startPosition);
+
+                } else if(element === "badge"){
+                    let badge = `<span class="bg-purple-100 text-purple-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded ">Purple</span>`;
+                    blog_content.value = blog_content.value.slice(0, startPosition) +  badge + blog_content.value.slice(startPosition);
+
+                } else if(element === "list"){
+                    let list = `
+ <ul class="w-48 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg">
+    <li class="w-full px-4 py-2 border-b border-gray-200 rounded-t-lg ">Profile</li>
+    <li class="w-full px-4 py-2 border-b border-gray-200 ">Settings</li>
+    <li class="w-full px-4 py-2 border-b border-gray-200 ">Messages</li>
+    <li class="w-full px-4 py-2 rounded-b-lg">Download</li>
+</ul>
+                    `;
+                    blog_content.value = blog_content.value.slice(0, startPosition) +  list + blog_content.value.slice(startPosition);
+
+                }else if(element === "progress"){
+                    let progress = `
+    <div class="flex justify-between mb-1">
+            <span class="text-base font-medium text-blue-700 ">Flowbite</span>
+            <span class="text-sm font-medium text-blue-700 ">45%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5 ">
+            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+    </div>`;
+                    blog_content.value = blog_content.value.slice(0, startPosition) +  progress + blog_content.value.slice(startPosition);
+
+                }else if(element === "toast"){
+                    let toast = `
+
+<div  class=" m-1 border shadow-ld flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x divide-gray-200 rounded-lg shadow  space-x " role="alert">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>      <div class="pl-4 text-sm font-normal">
+      <a class="p-2 hover:text-gray-500 font-bold" href="https://twitter.com/ElkarroumyTaha">Twitter</a>
+    </div>
+  </div>
+  `;
+                    blog_content.value = blog_content.value.slice(0, startPosition) +  toast + blog_content.value.slice(startPosition);
+
+                }
+
+
+            }
+            
+           
+        }
+    </script>
+    
+</body>
+</html>
+

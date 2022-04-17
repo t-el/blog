@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <%- include('head') -%>
+ 
+  <body class=" font-['Arial']">
+    <%- include('navigations') -%>
+    <div class=" p-4  container mx-auto">
+      <div class="p-1 m-2   rounded-lg  ">
+        <h1 class="text-5xl m-1 "><%= article[0].title %> </h1> 
+      
+       <div class="m-1">
+            <%- article[0].content -%> 
+       </div>
+      </div>
+
+ 
+    </div>
+    
+
+    
+
+     <hr>
+     <div class="flex justify-center">
+          <div class=" p-2 shadow m-2 border rounded-lg">
+        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Your email</label>
+        <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  " placeholder="name@mail.com">
+        <button type="button" class="px-3 py-2 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 m-1 ">Submit</button>
+    
+        <p class="mt-2 text-sm text-gray-500 ">We’ll never share your details.its for notify you new articles</p>
+    
+        </div>
+     </div>
+    
+     
+     <h1 class="font-bold text-center">follow me on : </h1>
+     <div class="m-1 flex flex-wrap justify-center ">
+         
+        <div  class=" m-1 border shadow-ld flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x divide-gray-200 rounded-lg shadow  space-x " role="alert">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>      <div class="pl-4 text-sm font-normal">
+            <a class="p-2 hover:text-gray-500 font-bold" href="https://twitter.com/ElkarroumyTaha">Twitter</a>
+          </div>
+        </div>
+    
+        <div  class=" m-1 border shadow-ld flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x divide-gray-200 rounded-lg shadow  space-x " role="alert">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>      <div class="pl-4 text-sm font-normal">
+            <a class="p-2 hover:text-gray-500 font-bold" href="https://medium.com/@elkarroumytaha">Medium</a>
+          </div>
+        </div>
+    
+        <div  class=" m-1 border shadow-ld flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x divide-gray-200 rounded-lg shadow  space-x " role="alert">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>      <div class="pl-4 text-sm font-normal">
+            <a class="p-2 hover:text-gray-500 font-bold" href="https://github.com/t-el">Github</a>
+          </div>
+        </div>
+      
+        </div>
+        <hr>
+     <%- include('footer') -%>
+  </body>
+</html>

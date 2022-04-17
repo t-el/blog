@@ -8,7 +8,7 @@
       <div class="flex p-4 m-2 mb-4 text-sm rounded-lg bg-slate-300" role="alert">
         <svg class="inline flex-shrink-0 mr-3 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
         <div>
-          <span class="font-bold">Looking for job  , see <a class="text-blue-900 underline" href="/">my portfolio</a>  </span>
+          <span class="font-bold">I am Looking for job  , see <a class="text-blue-300 underline" href="/">my portfolio</a>  </span>
         </div>
       </div>
      
@@ -16,23 +16,39 @@
     </div>
 
     <div class="grid grid-cols-3 gap-4 ">
-      <div class="col-span-2  p-1 m-1 relative">
-        <img class="opacity-50 object-cover w-full h-full duration-500 hover:scale-110    " src="https://random.imagecdn.app/500/150" alt="">
-      <div class="absolute top-0 left-0 text-4xl  font-bold backdrop-blur-lg p-1">How to make a Node JS Cli ?How to make a Node JS Cli ?How to make a Node JS Cli ? <br>
-        <a href="#" class="m-1 p-1 inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
-        Read more
-        <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-        </a>
+      <div class="col-span-2  p-1 m-1">
+
+    <div class="flex">
+       <div class="p-1 m-1">
+         <h1 class="text-2xl font-bold">Taha Elkarroumy</h1>
+         <div class="p-2 rounded-lg font-bold  bg-black text-white">
+           <b class="text-yellow-300">$</b> Full stack Developer && Web3 Passionate
+         </div>
+         <h1 class="text-md  p-1 ">Passionate programmer making scalable web applications using wide range of technologies like <b>NodeJs</b>,<b>MongoDb</b>,<b>React</b> & more ... </h1>
+      <div class="flex flex-wrap justify-center">
+        
+
+<div  class=" m-1  flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 hover:bg-green-200 divide-x divide-gray-200 rounded-lg shadow  space-x " role="alert">
+  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>      <div class="pl-4 text-sm font-normal">
+    <a class="p-2 hover:text-gray-500 font-bold" href="https://www.upwork.com/freelancers/~015d1100736f72473b">Upwork profile</a>
+  </div>
+</div>
+<div  class=" m-1  flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 hover:bg-blue-200 divide-x divide-gray-200 rounded-lg shadow  space-x " role="alert">
+  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>      <div class="pl-4 text-sm font-normal">
+    <a class="p-2 hover:text-gray-500 font-bold" href="https://www.freelancer.com/u/programmertaha">Freelancer profile</a>
+  </div>
+</div>
       </div>
- 
+       </div>
+    </div>
       </div>
  
     <div class="p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md">
-      <a href="#">
-      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Noteworthy technology acquisitions 2021</h5>
+      <span class="p-1 bg-gray-300 rounded-lg text-sm">Latest Article</span>
+      <a href="/article/<%= articles[0]._id %> ">
+      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900"><%= articles[0].title %> </h5>
       </a>
-      <p class="mb-3 font-normal text-gray-700 ">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-      <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+      <a href="/article/<%= articles[0]._id %> "" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
       Read more
       <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
       </a>
@@ -40,37 +56,12 @@
   
      
       
-<a href="#" class=" m-1 flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 ">
-  <div class="flex flex-col justify-between p-4 leading-normal">
-  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Noteworthy technology acquisitions 2021</h5>
-  <p class="mb-3 font-normal text-gray-700 ">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-  </div>
-  </a>
-  
-     
-<a href="#" class="m-1 flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 ">
-  <div class="flex flex-col justify-between p-4 leading-normal">
-  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Noteworthy technology acquisitions 2021</h5>
-  <p class="mb-3 font-normal text-gray-700 ">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-  </div>
-  </a>
-  
-
-      
-  <div class=" p-2 shadow m-1 border rounded-lg">
-    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Your email</label>
-    <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  " placeholder="name@mail.com">
-    <button type="button" class="px-3 py-2 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 m-1 ">Submit</button>
-
-    <p class="mt-2 text-sm text-gray-500 ">We’ll never share your details. Read our <a href="#" class="font-medium text-blue-600 hover:underline">Privacy Policy</a>.</p>
-
-    </div>
   
     </div>
     
 <div class="m-2 flex font-bold text-3xl m-1">
  
-  <h1>New Articles</h1>
+  <h1>Articles</h1>
   <svg class=" m-1 animate-bounce w-6 h-6  text-violet-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
     <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
   </svg>
@@ -78,108 +69,53 @@
 </div>
   <div class="  p-2 md:flex flex-wrap justify-center ">
     
+
+    <% articles.forEach(article => { %>
+     
     <div class="max-w-sm m-1 rounded-lg border border-gray-200 shadow-md">
-      <a href="#">
-      <img class="duration-500 hover:scale-125 " src="https://random.imagecdn.app/500/150" alt="">
-      </a>
-      <div class="p-5">
-      <a href="#">
-      <h5 class="mb-2 text-2xl font-bold tracking-tight">Noteworthy technology acquisitions 2021</h5>
-      </a>
-      <p class="mb-3 font-normal text-gray-700 ">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-      <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-      Read more
-      <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-      </a>
+          <div class="p-5">
+          <a href="/article/<%= articles[0]._id %> ">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight"><%= article.title %></h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 "><%= article.date %></p>
+          <a href="article/<%- article._id %>" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          Read more
+          <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </a>
+          </div>
       </div>
-  </div>
 
-
-      <div class="max-w-sm m-1 rounded-lg border border-gray-200 shadow-md">
-        <a href="#">
-        <img class="duration-500 hover:scale-125 " src="https://random.imagecdn.app/500/150" alt="">
-        </a>
-        <div class="p-5">
-        <a href="#">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight">Noteworthy technology acquisitions 2021</h5>
-        </a>
-        <p class="mb-3 font-normal text-gray-700 ">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-        <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        Read more
-        <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-        </a>
-        </div>
-    </div>
-
-    <div class="max-w-sm m-1 rounded-lg border border-gray-200 shadow-md">
-      <a href="#">
-      <img class="duration-500 hover:scale-125 " src="https://random.imagecdn.app/500/150" alt="">
-      </a>
-      <div class="p-5">
-      <a href="#">
-      <h5 class="mb-2 text-2xl font-bold tracking-tight">Noteworthy technology acquisitions 2021</h5>
-      </a>
-      <p class="mb-3 font-normal text-gray-700 ">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-      <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-      Read more
-      <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-      </a>
-      </div>
-  </div>
-
-  <div class="max-w-sm m-1 rounded-lg border border-gray-200 shadow-md">
-    <a href="#">
-    <img class="duration-500 hover:scale-125 " src="https://random.imagecdn.app/500/150" alt="">
-    </a>
-    <div class="p-5">
-    <a href="#">
-    <h5 class="mb-2 text-2xl font-bold tracking-tight">Noteworthy technology acquisitions 2021</h5>
-    </a>
-    <p class="mb-3 font-normal text-gray-700 ">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-    <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-    Read more
-    <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-    </a>
-    </div>
-</div>
+    <% }) %>
+   
   
    </div>
   
-
-   
-
- 
-
 
 
   <hr>
 
-   <p class="font-bold text-3xl m-1">FAQ</p>
-   <div class="m-1">
-
-    <div class="flex p-4 m-2 mb-4 text-sm rounded-lg bg-slate-300" role="alert">
-      <svg class="inline flex-shrink-0 mr-3 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-      <div>
-        <span class="font-bold">To ask question send me an email or use my Telegram bot</span>
+    <div class="m-1 flex flex-wrap justify-center ">
+         
+    <div  class=" m-1 border shadow-ld flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x divide-gray-200 rounded-lg shadow  space-x " role="alert">
+      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>      <div class="pl-4 text-sm font-normal">
+        <a class="p-2 hover:text-gray-500 font-bold" href="https://twitter.com/ElkarroumyTaha">Twitter</a>
       </div>
     </div>
 
-    <div class="container mx-auto ">
-      <h1>Most asked Questions : </h1>
-
-  <ul class="w-full text-lg font-bold text-gray-900  ">
-    <li class="w-full px-4 py-2 hover:text-blue-500"> <a href="/">1-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius accusantium velit a.</a> </li>
-    <li class="w-full px-4 py-2 hover:text-blue-500"> <a href="/">2-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius accusantium velit a.</a> </li>
-    <li class="w-full px-4 py-2 hover:text-blue-500"> <a href="/">3-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius accusantium velit a.</a> </li>
-    <li class="w-full px-4 py-2 hover:text-blue-500"> <a href="/">4-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius accusantium velit a.</a> </li>
-    <li class="w-full px-4 py-2 hover:text-blue-500"> <a href="/">5-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius accusantium velit a.</a> </li>
-    <li class="w-full px-4 py-2 hover:text-blue-500"> <a href="/">6-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius accusantium velit a.</a> </li>
-        
-  </ul>
-  
+    <div  class=" m-1 border shadow-ld flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x divide-gray-200 rounded-lg shadow  space-x " role="alert">
+      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>      <div class="pl-4 text-sm font-normal">
+        <a class="p-2 hover:text-gray-500 font-bold" href="https://medium.com/@elkarroumytaha">Medium</a>
+      </div>
     </div>
 
-   </div>
+    <div  class=" m-1 border shadow-ld flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x divide-gray-200 rounded-lg shadow  space-x " role="alert">
+      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>      <div class="pl-4 text-sm font-normal">
+        <a class="p-2 hover:text-gray-500 font-bold" href="https://github.com/t-el">Github</a>
+      </div>
+    </div>
+  
+    </div>
+    
      
     
    
